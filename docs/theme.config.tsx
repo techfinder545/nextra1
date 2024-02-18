@@ -142,7 +142,7 @@ const config: DocsThemeConfig = {
           </a>
         </div>
         <p className="mt-6 text-xs">
-          © {new Date().getFullYear()} The Nextra Project.
+          © {new Date().getFullYear()} The Comply.Me.
         </p>
       </div>
     )
