@@ -53,7 +53,7 @@ const config: DocsThemeConfig = {
       }
     }
   },
-  logo,
+  logo: "Comply.Me",
   head: function useHead() {
     const { title } = useConfig()
     const { route } = useRouter()
