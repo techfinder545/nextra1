@@ -19,13 +19,7 @@
       "layout": "full"
     }
   },
-  "about": {
-    "type": "page",
-    "title": "About",
-    "theme": {
-      "typesetting": "article"
-    }
-  },
+  
   "404": {
     "type": "page",
     "theme": {
