@@ -42,5 +42,11 @@
     "type": "page",
     "href": "https://www.comply.me/category/outsourcing-hr/",
     "newWindow": true
+  },
+  "home1": {
+    "title": "Home1",
+    "type": "page",
+    "href": "https://www.comply.me/",
+    "newWindow": true
   }
 }
