@@ -32,5 +32,21 @@
       "timestamp": false,
       "typesetting": "article"
     }
+  },
+  "register": "Start a business",
+  "forms": "Legal Forms",
+  "compliance": "Business Compliance",
+  "about": {
+    "title": "Home",
+    "type": "page",
+    "href": "https://www.comply.me/",
+    "newWindow": true
+  },
+  
+  "outsourcing-hr": {
+    "title": "Outsourcing HR↗",
+    "type": "page",
+    "href": "https://www.comply.me/category/outsourcing-hr/",
+    "newWindow": true
   }
 }

@@ -38,17 +38,17 @@ export function I18n() {
       a={
         <div style={{ display: 'flex', flexDirection: 'column', gap: '.5rem' }}>
           <File
-            name="/hello.en-US.mdx"
+            name="LLC"
             className={active === 'en' && styles.active}
             onPointerOver={() => setActive('en')}
           />
           <File
-            name="/hello.de-DE.mdx"
+            name="Corporation"
             className={active === 'de' && styles.active}
             onPointerOver={() => setActive('de')}
           />
           <File
-            name="/hello.ja-JP.mdx"
+            name="Nonprofit"
             className={active === 'ja' && styles.active}
             onPointerOver={() => setActive('ja')}
           />
@@ -68,7 +68,7 @@ export function I18n() {
             )}
             onPointerOver={() => setActive('en')}
           >
-            English
+            Simple
           </span>
           <span
             className={cn(
@@ -79,7 +79,7 @@ export function I18n() {
             )}
             onPointerOver={() => setActive('de')}
           >
-            Deutsch
+            Go public
           </span>
           <span
             className={cn(
@@ -90,7 +90,7 @@ export function I18n() {
             )}
             onPointerOver={() => setActive('ja')}
           >
-            日本語
+            Tax Breaks
           </span>
         </div>
       }
@@ -101,9 +101,9 @@ export function I18n() {
 <div className="home-content">
   <div className="content-container">
     <h1 className="headline">Stay legally compliant <br className='sm:block hidden'/></h1>
-    <p className="subtitle">Find tailored solutions for your regulatory needs<br className='sm:block hidden'/><a className="nextjs-link" href="https://nextjs.org" target="_blank">Taxes, licenses, permits, certificates, annual reports</a></p>
+    <p className="subtitle">Find tailored solutions for your business<br className='sm:block hidden'/></p>
     <p className="subtitle">
-      <Link className={styles.cta} href="/docs">Get started <span>→</span></Link>
+      <Link className={styles.cta} href="https://www.comply.me/registracia/">Get started <span>→</span></Link>
     </p>
   </div>
   <style jsx>{`
@@ -303,41 +303,20 @@ export function I18n() {
   <div className="features-container">
     <div className="content-container">
       <Features>
-        <Feature index={0} large centered id="docs-card" href="/docs/docs-theme/start">
-          <Image src={docsCard} alt="Background" loading="eager" />
-          <Image src={docsCardDark} alt="Background (Dark)" loading="eager" />
-          <h3>Form a company <br className="show-on-mobile"/>in minutes</h3>
+        <Feature index={2} href="/compliance">
+          <h3>Business Compliance <br className="show-on-mobile"/></h3>
+
+          <p className='mb-4'>Services</p>
+            <li>Registered agent</li>
+            <li>Business licenses</li>
+            <li>Compliance Calendar</li>
+            <li>Tax Filings</li>
+            <li>Dissolution</li>
+      
         </Feature>
-        <Feature index={1} centered className="card-with-border" href="/docs/guide/image">
-          <div className="h-full flex flex-col justify-between">
-            <h3>Links and images are <br className="show-on-mobile"/>always <span className="font-light">optimized</span></h3>
-            <p className='text-left mb-8'>Nextra automatically converts Markdown links and images to use [Next.js Link](https://nextjs.org/docs/routing/introduction#linking-between-pages) and [Next.js Image](https://nextjs.org/docs/basic-features/image-optimization#local-images) when possible. No slow navigation or layout shift.</p>
-            <div>
-              <div className={styles.optimization}>
-                <div style={{ fontSize: '.9rem' }} className="leading-8">
-                  <code>{`[Learn more](/more)`}</code>
-                  <br/>
-                  <code>{`![Hero](/hero.png)`}</code>
-                </div>
-              </div>
-              <ArrowRightIcon width="1.2em" className="text-neutral-400 rotate-90 my-6 mx-auto" />
-              <div className={styles.optimization}>
-                <div style={{ fontSize: '.9rem' }} className="leading-8">
-                  <code>{`<Link .../>`}</code>
-                  <br/>
-                  <code>{`<Image .../>`}</code>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Feature>
-        <Feature index={2} id="highlighting-card" href="/docs/guide/syntax-highlighting">
-          <h3>Advanced syntax <br className="show-on-mobile"/>highlighting solution</h3>
-          <p>Performant and reliable build-time syntax highlighting powered by [Shiki](https://shiki.matsu.io).</p>
-        </Feature>
-        <Feature index={3} href="/docs/guide/i18n">
-          <h3>I18n as easy as <br className="show-on-mobile"/>creating new files</h3>
-          <p className='mb-4'>Name your page files with locales suffixed, Nextra and Next.js will do the rest for you.</p>
+        <Feature index={3} href="/register">
+          <h3>Business <br className="show-on-mobile"/>Formation</h3>
+          <p className='mb-4'>Register your business in minutes</p>
           <I18n/>
         </Feature>
         <Feature index={4} centered style={{
@@ -349,7 +328,7 @@ export function I18n() {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: '#fff'
-        }} href="/docs/guide/markdown">
+        }} href="/licenses">
           <svg width="70%" viewBox="0 0 69 29" fill="none" xmlns="http://www.w3.org/2000/svg" style={{
             filter: 'drop-shadow(0 2px 10px rgba(0, 0, 0, .1))'
           }}>
@@ -357,8 +336,9 @@ export function I18n() {
           </svg>
           <p style={{
             textShadow: '0 2px 4px rgb(0 0 0 / 20%)'
-          }}><a href="https://mdxjs.com/blog/v2" target="_blank" style={{ color: 'currentColor' }}>MDX 2</a> lets you use Components inside Markdown, <br className="hide-medium"/>with huge performance boost since v1.</p>
+          }}>Taxes, licenses & permits </p>
         </Feature>
+
         <Feature index={5} centered className="feat-darkmode" style={{
           display: 'flex',
           alignItems: 'center',
@@ -412,12 +392,12 @@ export function I18n() {
               position: 'relative',
               mixBlendMode: 'difference',
             }}
-          >Dark <br/>mode <br/>included</motion.h3>
+          >Find <br/>Tailored <br/>Solutions</motion.h3>
         </Feature>
-        <Feature index={6} large id="search-card" href="/docs/docs-theme/theme-configuration#search">
+        <Feature index={6} large id="search-card" href="/taxes">
           <div style={{ zIndex: 2}}>
-            <h3>Full-text search, <br/>zero-config needed</h3>
-            <p>Nextra indexes your content automatically at build-time and performs incredibly fast full-text search via [FlexSearch](https://github.com/nextapps-de/flexsearch).</p>
+            <h3>Embrace worry-free tax filings <br/>Avoid penalities</h3>
+            <p>You can be fined $25,000 for inaccurate or missing forms</p>
           </div>
           <div className="absolute w-full h-full inset-0 hidden sm:block bg-[linear-gradient(to_right,white_250px,_transparent)] dark:bg-[linear-gradient(to_right,#202020_250px,_transparent)] z-[1]"/>
           <video autoPlay="autoplay" loop muted playsInline className="dark:hidden block">
@@ -427,34 +407,44 @@ export function I18n() {
             <source src="/assets/search-dark.mp4" type="video/mp4"/>
           </video>
         </Feature>
-        <Feature index={7} large id="fs-card" style={{
-          color: 'white',
-          backgroundImage: 'url(/assets/routing.png), url(/assets/gradient-bg.jpeg)',
-          backgroundSize: '140%, 180%',
-          backgroundPosition: '130px -8px, top',
-          backgroundRepeat: 'no-repeat',
-          textShadow: '0 1px 6px rgb(38 59 82 / 18%)',
-          aspectRatio: '1.765',
-        }} href="/docs/docs-theme/page-configuration">
-          <h3>Organize pages intuitively, <br/>with file-system routing from Next.js</h3>
+        <Feature index={0} large centered id="docs-card" href="/docs/docs-theme/start">
+          <Image src={docsCard} alt="Background" loading="eager" />
+          <Image src={docsCardDark} alt="Background (Dark)" loading="eager" />
+          <h3>Form a company <br className="show-on-mobile"/>in minutes</h3>
         </Feature>
-        <Feature index={8} id="a11y-card" className='card-with-border' style={{
-          backgroundSize: 750,
-          backgroundRepeat: 'no-repeat',
-          minHeight: 288
-        }}>
-          <h3>A11y as a top priority</h3>
-          <p>Nextra respects system options <br className="show-on-mobile"/>such as <b>Increase Contrast</b> and <b>Reduce Motion</b>.</p>
+        <Feature index={1} centered className="card-with-border" href="/docs/guide/image">
+          <div className="h-full flex flex-col justify-between">
+            <h3>Find local labor <br className="show-on-mobile"/>compliance <span className="font-light">solutions </span></h3>
+            <p className='text-left mb-8'>Hire internationally and pay talent anywhere</p>
+            <div>
+              <div className={styles.optimization}>
+                <div style={{ fontSize: '.9rem' }} className="leading-8">
+                  <code>{`Multi-country payroll management`}</code>
+                  <br/>
+                  <code>{`Guided Global HR Compliance`}</code>
+                </div>
+              </div>
+              <ArrowRightIcon width="1.2em" className="text-neutral-400 rotate-90 my-6 mx-auto" />
+              <div className={styles.optimization}>
+                <div style={{ fontSize: '.9rem' }} className="leading-8">
+                  <code>{`Global PEO & EOR services`}</code>
+                  <br/>
+                  <code>{`Hire and expand across the globe legally`}</code>
+                </div>
+              </div>
+            </div>
+          </div>
         </Feature>
-        <Feature index={9} href="/docs/guide/ssg">
-          <h3>Hybrid rendering, <br/>next generation</h3>
-          <p className='mr-6'>You can leverage the hybrid rendering power from Next.js with your Markdown content including [SSG](https://nextjs.org/docs/basic-features/pages#static-generation-recommended), [SSR](https://nextjs.org/docs/basic-features/pages#server-side-rendering), and [ISR](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration).</p>
+        <Feature index={9} href="https://www.comply.me/registracia/">
+          <h3>Manage compliance issues <br/> </h3>
+          <p className='mr-6'>Keep your business in good standing with required filings and annual reports.</p>
         </Feature>
         <Feature index={10} large>
-          <h3>And more...</h3>
-          <p>SEO / RTL Layout / Pluggable Themes / Built-in Components / Last Git Edit Time / Multi-Docs...<br/>A lot of new possibilities to be explored.</p>
-          <p className="subtitle"><Link className="!no-underline" href="/docs">Start using Nextra →</Link></p>
+          <h3>Comply.Me</h3>
+          <p>One-Stop Shop for all regulatory <b>Federal</b> and <b>State requirements</b></p>
+          <p className="subtitle"><Link className="!no-underline" href="https://www.comply.me/">Start with Comply.Me →</Link></p>
         </Feature>
+
       </Features>
     </div>
   </div>
